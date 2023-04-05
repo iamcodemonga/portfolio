@@ -14,7 +14,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">CREEDBOX</h5>
                         <p className="my-1">Senior web developer</p>
-                        <p className="small">dd/mm/yyyy - dd/mm/yyyy</p>
+                        <p className="small">12/07/2022 - 09/01/2023</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -33,7 +33,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ALUXHOMES</h5>
                         <p className="my-1">Fullstack software developer</p>
-                        <p className="small">dd/mm/yyyy - dd/mm/yyyy</p>
+                        <p className="small">11/02/2021 - 18/06/2022</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -52,7 +52,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ENUGU STATE TOURISM BOARD (ESTOURS)</h5>
                         <p className="my-1">Junior software developer</p>
-                        <p className="small">dd/mm/yyyy - dd/mm/yyyy</p>
+                        <p className="small">23/09/2019 - 03/08/2020</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -70,7 +70,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">HAKIDEMY</h5>
                         <p className="my-1">Software developer - Intern</p>
-                        <p className="small">dd/mm/yyyy - dd/mm/yyyy</p>
+                        <p className="small">15/11/2018 - 07/05/2019</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">

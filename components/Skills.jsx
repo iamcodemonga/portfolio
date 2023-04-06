@@ -1,15 +1,20 @@
 import { useRouter } from "next/router"
+import { motion } from "framer-motion"
+import { headerText, singleText } from "@/utils/animation"
+import { useInView } from "react-intersection-observer"
 
 const Skills = () => {
 
     const router = useRouter()
+    const { ref: element, inView } = useInView({ threshold: 1})
 
     return (
         <section id="skills" className={router.pathname == '/skills' ? "w-100 mtop-b" : "w-100"}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6">
-                        <h1 className="mb-4">SKILLS</h1>
+                    <div className="col-lg-6" >
+                        {/* <h1 className="mb-4">SKILLS</h1> */}
+                        <AnimatedWords element={element} title="SKILLS" inView={inView} />
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -43,6 +48,18 @@ const Skills = () => {
                 </div>
             </div>
         </section>
+    )
+}
+
+const AnimatedWords = ({ title, element, inView }) => {
+    return (
+        <div className="w-100 mx-auto pt-2 d-flex align-items-center justify-content-center overflow-hidden">
+            <motion.h1 ref={element} className="d-inline-block w-100 overflow-hidden" style={{lineHeight:"1.2"}} variants={headerText} initial="initial" animate={inView && "animate"}>
+                {title && title.split(" ").map((word, index) => (
+                    <motion.span ref={element} variants={singleText} key={index} className="d-inline-block overflow-hidden py-0">{word}&nbsp;</motion.span>
+                ))}
+            </motion.h1>
+        </div>
     )
 }
 

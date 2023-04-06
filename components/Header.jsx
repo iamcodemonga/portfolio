@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { motion } from "framer-motion"
+import { headerImage, headerText, staggerChildren, singleText } from "@/utils/animation"
 
 const Header = () => {
   return (
@@ -8,7 +10,9 @@ const Header = () => {
                 <div className="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 align-self-center">
                     <div>
                         <small className="spacer-text text-white-50">Hi there! I'm&nbsp;<strong><span style={{color: 'rgb(163, 51, 167)'}}>Emmanuel Ufot</span></strong></small>
-                        <h2 className="mt-1">Software developer and content creator.</h2>
+                        <div>
+                            <AnimatedWords title="Software developer and content creator" />
+                        </div>
                         <p>I specialize in creating high-performance web applications that enhance brand identity. In addition, I provide support and encouragement to fellow software developers in their effort to build robust, industry-standard softwares.</p>
                         <Link className="me-4 hero-link" href="projects">View Projects</Link>
                         <span className="me-4 text-white-50">or</span>
@@ -16,12 +20,26 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
-                    <div><img className="w-100" src="/codemonga.jpg" /></div>
+                    <div>
+                        <motion.img className="w-100" src="/codemonga.jpg" variants={headerImage} initial="initial" animate="animate" />
+                    </div>
                 </div>
             </div>
         </div>
     </header>
   )
+}
+
+const AnimatedWords = ({ title }) => {
+    return (
+        <div className="w-100 mx-auto pt-2 d-flex align-items-center justify-content-center overflow-hidden">
+            <motion.h2 className="d-inline-block w-100 mt-2 overflow-hidden" style={{lineHeight:"1.2"}} variants={headerText} initial="initial" animate="animate">
+                {title.split(" ").map((word, index) => (
+                    <motion.span variants={singleText} key={index} className="d-inline-block overflow-hidden py-0">{word}&nbsp;</motion.span>
+                ))}
+            </motion.h2>
+        </div>
+    )
 }
 
 export default Header

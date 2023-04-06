@@ -1,10 +1,15 @@
 import { useRouter } from "next/router"
 import Image from "next/image"
 import { useEffect } from "react"
+import { motion } from "framer-motion"
+import { headerText, singleText } from "@/utils/animation"
+import { useInView } from "react-intersection-observer"
 
 const Projects = () => {
 
     const router = useRouter()
+    const { ref: mediaElement, inView:mediaView } = useInView({ threshold: 1})
+    const { ref: element, inView: view } = useInView({ threshold: 1})
 
     const handleSlider = () => {
         const productContainers = [...document.querySelectorAll('.product-container')];
@@ -32,7 +37,8 @@ const Projects = () => {
         <>
             <section id="projects-sm" className={ router.pathname == '/' ? "w-100 overflow-hidden position-relative mt-5 d-block d-sm-none" : "w-100 overflow-hidden position-relative d-block d-sm-none pt-5 mtop-a" }>
                 <div className="container mb-5">
-                    <h1 className="d-flex"><span className="me-4">PROJECTS</span><span className="d-none d-sm-block">CATALOG</span></h1>
+                    {/* <motion.h1 className="d-flex"><span className="me-4">PROJECTS</span><span className="d-none d-sm-block">CATALOG</span></motion.h1> */}
+                    <AnimatedWords title="PROJECTS CATALOG" element={mediaElement} inView={mediaView} />
                 </div>
                 <div className="container">
                     <div className="row g-5">
@@ -40,7 +46,7 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://glittermars.vercel.app" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={400} height={400} />
+                                        <Image className="border-0 w-100 h-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://glittermars.vercel.app" target="_blank">
@@ -68,7 +74,7 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://streamheavens.netlify.app" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={400} height={400} />
+                                        <Image className="border-0 w-100 h-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://streamheavens.netlify.app" target="_blank">
@@ -96,7 +102,7 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://shidodor.com" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/shidodor-preview.svg" style={{border: 'none'}}  width={400} height={400} />
+                                        <Image className="border-0 w-100 h-100" src="/shidodor-preview.svg" style={{border: 'none'}}  width={400} height={400} alt="project_image"  />
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://shidodor.com" target="_blank">
@@ -124,7 +130,7 @@ const Projects = () => {
                             <div className="product-card w-100 pb-1">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://github.com/iamcodemonga/gluecanvas" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={400} height={400} />
+                                        <Image className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
                                         <span className="badge bg-danger product-status">in progress</span>
                                     </a>
                                 </div>
@@ -154,16 +160,17 @@ const Projects = () => {
             </section>
             <section id="projects" className={ router.pathname == '/' ? "w-100 overflow-hidden position-relative pb-4 d-none d-sm-block" : "w-100 overflow-hidden position-relative pb-4 d-none d-sm-block mtop-c"}>
                 <div className="container mb-5">
-                    <h1 className="d-flex">
+                    {/* <h1 className="d-flex">
                         <span className="me-4">PROJECTS</span>
                         <span className="d-none d-sm-block">CATALOG</span>
-                    </h1>
+                    </h1> */}
+                    <AnimatedWords title="PROJECTS CATALOG" element={element} inView={view} />
                 </div>
                 <div className="container product-container">
                     <div className="product-card pb-2">
                         <div className="position-relative overflow-hidden product-card">
                             <a className="d-block" href="https://glittermars.vercel.app" target="_blank">
-                                <Image className="border-0 w-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={500} height={350} />
+                                <Image className="border-0 w-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={500} height={350} alt="project_image" />
                             </a>
                         </div>
                         <a className="text-decoration-none" href="https://glittermars.vercel.app" target="_blank">
@@ -189,7 +196,7 @@ const Projects = () => {
                     <div className="product-card pb-2">
                         <div className="position-relative overflow-hidden product-card">
                             <a className="d-block" href="https://streamheavens.netlify.app" target="_blank">
-                                <Image className="border-0 w-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={500} height={350} />
+                                <Image className="border-0 w-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={500} height={350} alt="project_image"  />
                             </a>
                         </div>
                         <a className="text-decoration-none" href="https://streamheavens.netlify.app" target="_blank">
@@ -215,7 +222,7 @@ const Projects = () => {
                     <div className="product-card pb-2">
                         <div className="position-relative overflow-hidden product-card">
                             <a className="d-block" href="https://shidodor.com" target="_blank">
-                                <Image className="border-0 w-100" src="/shidodor-preview.svg" style={{border: 'none'}} width={500} height={350} />
+                                <Image className="border-0 w-100" src="/shidodor-preview.svg" style={{border: 'none'}} width={500} height={350} alt="project_image"  />
                             </a>
                         </div>
                         <a className="text-decoration-none" href="https://shidodor.com" target="_blank">
@@ -241,7 +248,7 @@ const Projects = () => {
                     <div className="product-card pb-2">
                         <div className="position-relative overflow-hidden product-card">
                             <a className="d-block" href="https://github.com/iamcodemonga/gluecanvas" target="_blank">
-                                <Image className="border-0 w-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={500} height={350} />
+                                <Image className="border-0 w-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={500} height={350} alt="project_image"  />
                             </a>
                             <span className="badge bg-danger product-status">in progress</span>
                         </div>
@@ -284,6 +291,18 @@ const Projects = () => {
                 </div>
             </section>
         </>
+    )
+}
+
+const AnimatedWords = ({ title, element, inView }) => {
+    return (
+        <div className="w-100 mx-auto pt-2 d-flex align-items-center justify-content-center overflow-hidden">
+            <motion.h1 ref={element} className="d-flex w-100 overflow-hidden" style={{lineHeight:"1.2"}} variants={headerText} initial="initial" animate={inView && "animate"}>
+                {title.split(" ").map((word, index) => (
+                    <motion.span ref={element} variants={singleText} key={index} className={index == 0 ? "me-4 overflow-hidden py-0" : "d-none d-sm-block overflow-hidden py-0"}>{word}&nbsp;</motion.span>
+                ))}
+            </motion.h1>
+        </div>
     )
 }
 

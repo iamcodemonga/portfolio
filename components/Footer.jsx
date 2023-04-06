@@ -1,10 +1,19 @@
+import { motion } from "framer-motion"
+import { headerText, singleText } from "@/utils/animation"
+import { useInView } from "react-intersection-observer"
+
 const Footer = () => {
+
+    const { ref: contactElement, inView:contactView } = useInView({ threshold: 1})
+    const { ref: aboutElement, inView: aboutView } = useInView({ threshold: 1})
+
   return (
-    <footer id="contact" className="pb-4 w-100 overflow-hidden">
+    <footer id="contact" className="pb-3 w-100 overflow-hidden">
         <div className="container">
             <div className="row gx-5">
                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <h1 className="text-break">LET'S WORK TOGETHER</h1>
+                    {/* <h1 className="text-break">LET'S WORK TOGETHER</h1> */}
+                    <AnimatedWords title="LET'S WORK TOGETHER" element={contactElement} inView={contactView} />
                     <p>Excellent ventures demand exceptional intellects. if you are seeking a developer who comprehends your business or project objectives and priorities with clarity and works accordingly, then the purple icon below is for you.</p>
                     <a className="btn btn-lg px-5 my-4 btn-monga rounded-5" role="button" href="mailto:codemonga@gmail.com" target="_blank">Drop a message</a>
                     <div className="mt-3 mb-5">
@@ -42,17 +51,42 @@ const Footer = () => {
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <div>
-                        <h4 className="mt-4">MORE ABOUT ME</h4>
+                        {/* <h4 className="mt-4">MORE ABOUT ME</h4> */}
+                        <SmallAnimatedWords title="MORE ABOUT ME" element={aboutElement} inView={aboutView} />
                         <p className="mt-3 mb-4">As a software developer with more than four years of professional experience, I have a strong passion for my craft. I am constantly thrilled and driven to learn about new technologies through the creation of real-world projects. My decision to pursue software development was influenced by my desire to be a part of the next big thing, such as Facebook, Amazon, Netflix, Google, while also earning a living doing what I love - coding. I am particularly fond of Next.js and actually utilized it to build this website.</p>
                         <p className="mt-3 mb-4">Of course, I have a life outside coding. While coding may be listed as my primary hobby, I have a strong interest in gaming and football (soccer) as well. Additionally, I enjoy travelling from time to time as it provides me with inspiration and ideas to implement.</p>
                         <p className="mt-3">My current focus is in delving into the world of web3, with a goal of assisting businesses in transitioning to blockchain technology. Additionally, I'm utilizing my expertise to mentor online developers in crafting exceptional web applications.</p>
                     </div>
                 </div>
             </div>
-            <p className="text-center mt-5 small" style={{color: '#404040'}}>Developed by me!</p>
+            <p className="text-center mt-5 small" style={{color: '#404040'}}>Developed by codemonga!</p>
         </div>
     </footer>
   )
+}
+
+const AnimatedWords = ({ title, element, inView }) => {
+    return (
+        <div className="w-100 mx-auto pt-2 d-flex align-items-center justify-content-center overflow-hidden">
+            <motion.h1 ref={element} className="d-inline-block w-100 mt-2 overflow-hidden" style={{lineHeight:"1.2"}} variants={headerText} initial="initial" animate={inView && "animate"}>
+                {title.split(" ").map((word, index) => (
+                    <motion.span ref={element} variants={singleText} key={index} className="d-inline-block overflow-hidden py-0">{word}&nbsp;</motion.span>
+                ))}
+            </motion.h1>
+        </div>
+    )
+}
+
+const SmallAnimatedWords = ({ title, element, inView }) => {
+    return (
+        <div className="w-100 mx-auto pt-2 d-flex align-items-center justify-content-center overflow-hidden">
+            <motion.h4 ref={element} className="d-inline-block w-100 mt-4 overflow-hidden" style={{lineHeight:"1.2"}} variants={headerText} initial="initial" animate={inView && "animate"}>
+                {title.split(" ").map((word, index) => (
+                    <motion.span ref={element} variants={singleText} key={index} className="d-inline-block overflow-hidden py-0">{word}&nbsp;</motion.span>
+                ))}
+            </motion.h4>
+        </div>
+    )
 }
 
 export default Footer

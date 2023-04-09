@@ -1,3 +1,3 @@
-# I AM CODEMONGA
+# THIS MY PORTFOLIO WEBSITE
 
-see official website at [https://codemonga.netlify.app](https://codemonga.netlify.app)
+view my portfolio website at [https://codemonga.netlify.app](https://codemonga.netlify.app)

@@ -28,7 +28,6 @@ const Experience = () => {
                                 <ul>
                                     <li><span style={{color: 'rgb(190, 190, 190)'}}>Increase property sales by 23% by building trust through simple/minimalistic user friendly design using Bootstrap, Nextjs for great user experience.</span></li>
                                     <li><span style={{color: 'rgb(190, 190, 190)'}}>Implemented good customer service systems and increased customer retention by integrating the tawk.to API chatbot into the Next.js application.</span></li>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Increase customer convertion rate by optimizing website performance and load speed.</span></li>
                                     <li><span style={{color: 'rgb(190, 190, 190)'}}>Enhanced web security through meticulous debugging and vulnerability testing, particularly in the areas of user authentication and authorization.</span></li>
                                 </ul>
                             </div>

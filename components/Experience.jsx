@@ -24,11 +24,12 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
                             <div>
-                                <p className="mt-3">A real estate company where you can purchase and invest in properties with just your mobile phone.</p>
+                                <p className="mt-3">A real estate company where users can purchase and invest in lands and properties with their mobile devices.</p>
                                 <ul>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Increase property sales by building trust through simple/minimalistic user friendly design and implementation of good customer service systems.</span></li>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Increase property sales by 23% by building trust through simple/minimalistic user friendly design using Bootstrap, Nextjs for great user experience.</span></li>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Implemented good customer service systems and increased customer retention by integrating the tawk.to API chatbot into the Next.js application.</span></li>
                                     <li><span style={{color: 'rgb(190, 190, 190)'}}>Increase customer convertion rate by optimizing website performance and load speed.</span></li>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Enhanced web security through meticulous debugging and vulnerability testing, particularly in the areas of user authentification and authorization.</span></li>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Enhanced web security through meticulous debugging and vulnerability testing, particularly in the areas of user authentication and authorization.</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -37,7 +38,7 @@ const Experience = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ENUGU STATE TOURISM BOARD (ESTOURS)</h5>
-                        <p className="my-1">Junior software developer</p>
+                        <p className="my-1">Fullstack Web Developer</p>
                         <p className="small">23/09/2019 - 03/08/2020</p>
                     </div>
                     <div className="col-lg-6">

@@ -37,7 +37,6 @@ const Projects = () => {
         <>
             <section id="projects-sm" className={ router.pathname == '/' ? "w-100 overflow-hidden position-relative mt-5 d-block d-sm-none" : "w-100 overflow-hidden position-relative d-block d-sm-none pt-5 mtop-a" }>
                 <div className="container mb-5">
-                    {/* <motion.h1 className="d-flex"><span className="me-4">PROJECTS</span><span className="d-none d-sm-block">CATALOG</span></motion.h1> */}
                     <AnimatedWords title="PROJECTS CATALOG" element={mediaElement} inView={mediaView} />
                 </div>
                 <div className="container">
@@ -46,7 +45,8 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://glittermars.vercel.app" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
+                                        <img className="border-0 w-100 h-100" src="/glittermars-preview.svg" style={{border: 'none'}} alt="project_image"  />
+                                        {/* <Image className="border-0 w-100 h-100" src="/glittermars-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  /> */}
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://glittermars.vercel.app" target="_blank">
@@ -74,7 +74,8 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://streamheavens.netlify.app" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
+                                        <img className="border-0 w-100 h-100" src="/streamheavens-preview.svg" style={{border: 'none'}} alt="project_image"  />
+                                        {/* <Image className="border-0 w-100 h-100" src="/streamheavens-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  /> */}
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://streamheavens.netlify.app" target="_blank">
@@ -102,7 +103,8 @@ const Projects = () => {
                             <div className="product-card w-100">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://shidodor.com" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/shidodor-preview.svg" style={{border: 'none'}}  width={400} height={400} alt="project_image"  />
+                                        <img className="border-0 w-100 h-100" src="/shidodor-preview.svg" style={{border: 'none'}}  alt="project_image"  />
+                                        {/* <Image className="border-0 w-100 h-100" src="/shidodor-preview.svg" style={{border: 'none'}}  width={400} height={400} alt="project_image"  /> */}
                                     </a>
                                 </div>
                                 <a className="text-decoration-none" href="https://shidodor.com" target="_blank">
@@ -130,7 +132,8 @@ const Projects = () => {
                             <div className="product-card w-100 pb-1">
                                 <div className="position-relative overflow-hidden product-card w-100">
                                     <a className="d-block" href="https://github.com/iamcodemonga/gluecanvas" target="_blank">
-                                        <Image className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
+                                        <img className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} alt="project_image"  />
+                                        {/* <Image className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  /> */}
                                         <span className="badge bg-danger product-status">in progress</span>
                                     </a>
                                 </div>

@@ -17,27 +17,8 @@ const Experience = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h5 className="mb-0 mt-4">CREEDBOX</h5>
-                        <p className="my-1">Senior web developer</p>
-                        <p className="small">12/07/2022 - 09/01/2023</p>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="d-flex justify-content-start align-content-center skill-block mb-3">
-                            <div>
-                                <p className="mt-3">An agency that focuses on creating digital products for businesses and organisations, while also providing developer education.</p>
-                                <ul>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Trained and mentored junior developers to help accelerate the project's development timeline.</span></li>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Lead a team of software developers in transforming diverse business logic into web applications with optimal performance..</span></li>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Enhanced the team's work-rate through good communication and&nbsp; constant motivational dialogs.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ALUXHOMES</h5>
-                        <p className="my-1">Fullstack software developer</p>
+                        <p className="my-1">Software Developer</p>
                         <p className="small">11/02/2021 - 18/06/2022</p>
                     </div>
                     <div className="col-lg-6">

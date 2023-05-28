@@ -19,7 +19,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ALUXHOMES INC</h5>
                         <p className="my-1">Software Developer</p>
-                        <p className="small">11/02/2021 - 18/06/2022</p>
+                        <p className="small">11/07/2022 - 18/04/2023</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -38,7 +38,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">ENUGU STATE TOURISM BOARD (ESTOURS)</h5>
                         <p className="my-1">Fullstack Web Developer</p>
-                        <p className="small">23/09/2019 - 03/08/2020</p>
+                        <p className="small">23/02/2021 - 03/06/2022</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
@@ -58,7 +58,7 @@ const Experience = () => {
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">HAKIDEMY</h5>
                         <p className="my-1">Junior Web Developer</p>
-                        <p className="small">15/11/2018 - 07/05/2019</p>
+                        <p className="small">15/11/2018 - 07/01/2020</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">

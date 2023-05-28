@@ -17,7 +17,7 @@ const Experience = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h5 className="mb-0 mt-4">ALUXHOMES</h5>
+                        <h5 className="mb-0 mt-4">ALUXHOMES INC</h5>
                         <p className="my-1">Software Developer</p>
                         <p className="small">11/02/2021 - 18/06/2022</p>
                     </div>
@@ -46,8 +46,10 @@ const Experience = () => {
                             <div>
                                 <p className="mt-3">An agency that specializes in connecting tourists to the best hotels, salons, restaurants and recreational centers for better experience in Enugu state, Nigeria.</p>
                                 <ul>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Worked with a team of developers and transformed the agencies diverse business logic into a great MERN(MongoDB, Express, React.js, Node.js) STACK application with optimal performances.</span></li>
                                     <li><span style={{color: 'rgb(190, 190, 190)'}}>Contributed and help increase business traffic by adhering to SEO best practices and writing clean well structured codes.</span></li>
-                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Improved self-confidence through mentorship from experienced senior-developers</span></li>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>Enhanced the team's work-rate through good communication and constant motivational dialogs.</span></li>
+                                    <li><span style={{color: 'rgb(190, 190, 190)'}}>increased customer conversion rate by optimizing website content and adding a data caching layer using Redis to optimize the API load speed.</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,16 +58,18 @@ const Experience = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <h5 className="mb-0 mt-4">HAKIDEMY</h5>
-                        <p className="my-1">Software developer - Intern</p>
+                        <p className="my-1">Junior Web Developer</p>
                         <p className="small">15/11/2018 - 07/05/2019</p>
                     </div>
                     <div className="col-lg-6">
                         <div className="d-flex justify-content-start align-content-center skill-block mb-3">
                         <div>
-                            <p className="mt-3">A company that empowers designers and developers to build great digital products for businesses in Nigeria.</p>
+                            <p className="mt-3">A company that focuses on creating digital products for businesses and organizations in Nigeria while also training designers and developers.</p>
                             <ul>
-                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Learned and adapted quickly to new technologies and software applications.</span></li>
-                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Collaborated with designers and dev teams to implement user-friendly interfaces that met business goals and convert visitors to customers.</span></li>
+                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Learned, build and adapted to top technologies like Next.js, Node.js, Typescript, etc.</span></li>
+                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Worked with a variety of databases including SQL(PostgreSQL, MySQL) and NoSQL(MongoDB) databases.</span></li>
+                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Improved self-confidence through mentorship from experienced senior developers.</span></li>
+                                <li><span style={{color: 'rgb(190, 190, 190)'}}>Collaborated with designers and dev teams to implement user-friendly interfaces that met business goals and convert visitors to customers using Figma.</span></li>
                             </ul>
                         </div>
                         </div>

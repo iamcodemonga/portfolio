@@ -131,7 +131,7 @@ const Projects = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div className="product-card w-100 pb-1">
                                 <div className="position-relative overflow-hidden product-card w-100">
-                                    <a className="d-block" href="https://github.com/iamcodemonga/gluecanvas" target="_blank">
+                                    <a className="d-block" href="https://gluecanvas.bss.design" target="_blank">
                                         {/* <img className="border-0 w-100 h-100" src="/gluecanvas-preview.svg" style={{border: 'none'}} alt="project_image"  /> */}
                                         <Image className="border-0 w-100 h-100 bg-dark" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={400} height={400} alt="project_image"  />
                                         <span className="badge bg-danger product-status">in progress</span>
@@ -250,7 +250,7 @@ const Projects = () => {
                     </div>
                     <div className="product-card pb-2">
                         <div className="position-relative overflow-hidden product-card">
-                            <a className="d-block" href="https://github.com/iamcodemonga/gluecanvas" target="_blank">
+                            <a className="d-block" href="https://gluecanvas.bss.design" target="_blank">
                                 <Image className="border-0 w-100 bg-dark" src="/gluecanvas-preview.svg" style={{border: 'none'}} width={500} height={350} alt="project_image"  />
                             </a>
                             <span className="badge bg-danger product-status">in progress</span>

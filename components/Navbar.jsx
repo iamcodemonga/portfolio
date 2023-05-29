@@ -58,7 +58,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item social-links">
-                            <a className="nav-link border rounded-pill btn btn-light text-dark px-4" href="https://drive.google.com/file/d/17H3A6R3q57VBZKaZzcIJzps5fGkOGn7m/view?usp=sharing" download target="_blank">View Resume</a>
+                            <a className="nav-link border rounded-pill btn btn-light text-dark px-4" href="https://drive.google.com/file/d/1eDjkhDA_btMeKAnKD0Nr1FnWCxetadoR/view?usp=sharing" download target="_blank">View Resume</a>
                         </li>
                     </ul>
                 </div>

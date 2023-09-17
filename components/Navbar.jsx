@@ -59,7 +59,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item social-links">
-                            <a className="nav-link border rounded-pill btn btn-light text-dark px-4" href={`mailto:${codemonga.email} REQUEST FOR RESUME!!!`} download target="_blank">View Resume</a>
+                            <a className="nav-link border rounded-pill btn btn-light text-dark px-4" href={`mailto:${codemonga.email}?subject=REQUEST FOR RESUME!!!`} download target="_blank">View Resume</a>
                         </li>
                     </ul>
                 </div>

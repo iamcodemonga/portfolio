@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { headerImage, headerText, staggerChildren, singleText } from "@/utils/animation"
+import { codemonga } from "@/utils/data"
 
 const Header = () => {
   return (
@@ -9,19 +10,19 @@ const Header = () => {
             <div className="row g-5">
                 <div className="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 align-self-center">
                     <div>
-                        <small className="spacer-text text-white-50">Hi there! I'm&nbsp;<strong><span style={{color: 'rgb(163, 51, 167)'}}>Emmanuel Ufot</span></strong></small>
+                        <small className="spacer-text text-white-50">Hi there! I'm&nbsp;<strong><span style={{color: 'rgb(163, 51, 167)'}}>{codemonga.fullname}</span></strong></small>
                         <div>
-                            <AnimatedWords title="Software developer and content creator" />
+                            <AnimatedWords title={codemonga.title} />
                         </div>
-                        <p>I specialize in creating high-performance web applications that enhance brand identity. In addition, I provide support and encouragement to fellow software developers in their effort to build robust, industry-standard softwares.</p>
+                        <p>{codemonga.summary}</p>
                         <Link className="me-4 hero-link" href="projects">View Projects</Link>
                         <span className="me-4 text-white-50">or</span>
-                        <a className="hero-link" href="mailto:codemonga@gmail.com" target="_blank">Contact Me</a>
+                        <a className="hero-link" href={`mailto:${codemonga.email}`} target="_blank">Contact Me</a>
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
                     <div>
-                        <motion.img className="w-100" src="/codemonga.jpg" variants={headerImage} initial="initial" animate="animate" />
+                        <motion.img className="w-100" src={codemonga.photo} variants={headerImage} initial="initial" animate="animate" />
                     </div>
                 </div>
             </div>

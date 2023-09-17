@@ -22,7 +22,7 @@ const Navbar = () => {
                         <li className="nav-item"><Link className={router.pathname == "/" ? "nav-link active" : "nav-link"} href="/">Home</Link></li>
                         <li className="nav-item"><Link className={router.pathname == "/skills" ? "nav-link active" : "nav-link"} href="skills">Skills</Link></li>
                         <li className="nav-item"><Link className={router.pathname == "/projects" ? "nav-link active" : "nav-link"} href="projects">Projects</Link></li>
-                        <li className="nav-item"><Link className={router.pathname == "/experience" ? "nav-link active" : "nav-link"} href="experience">Experience</Link></li>
+                        <li className="nav-item d-none"><Link className={router.pathname == "/experience" ? "nav-link active" : "nav-link"} href="experience">Experience</Link></li>
                         <li className="nav-item"><a className="nav-link" href={`mailto:${codemonga.email}`} target="_blank">Contact</a></li>
                     </ul>
                     <ul className="navbar-nav ms-auto">

@@ -28,7 +28,7 @@ export const works = [
     {
         preview: '/gluecanvas-preview.svg',
         name: 'Gluecanvas',
-        description: 'A movie website - Get the latest trending movies and tv shows worldwide.',
+        description: 'An NFT marketplace - Get the best of art, photography and book NFTs.',
         website: 'https://gluecanvas.vercel.app',
         github: 'https://github.com/iamcodemonga/gluecanvas',
         technologies: [ 'Bootstrap', 'Typescript', 'Next.js', 'GraphQL', 'Hygraph CMS' ],
@@ -40,7 +40,7 @@ export const works = [
         description: "A food delivery website - Order your favourite delicacies from africa's best.",
         website: 'https://thekitcheen.vercel.app',
         github: 'https://github.com/iamcodemonga/thekitcheen',
-        technologies: [ 'Tailwindcss', 'Typescript', 'Next13', 'Redux', 'Hygraph CMS', 'Stripe API' ],
+        technologies: [ 'Tailwindcss', 'Typescript', 'Next13', 'Redux', 'Hygraph CMS' ],
         finished: true
     },
     {
@@ -49,7 +49,7 @@ export const works = [
         description: "An E-commerce website - The best fashion store for luxury and classy wears.",
         website: 'https://glittermars.vercel.app',
         github: 'https://github.com/iamcodemonga/glittermars',
-        technologies: [ 'Bootstrap', 'Javascript', 'Next.js', 'Redux', 'GraphCMS' ],
+        technologies: [ 'Bootstrap', 'Javascript', 'Next.js', 'Redux', 'GraphCMS', 'Stripe API' ],
         finished: true
     },
 ]
